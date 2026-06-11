@@ -1,18 +1,18 @@
-# pyvrft
+# pyoci
 
-Virtual Reference Feedback Tuning
+Optimal Control Identification
 
 ## Description
 
-This Python Toolbox provides commands to design feedback controllers using the method Virtual Reference Feedback Tuning.
-The toolbox implements both SISO and MIMO controllers, using standard least-squares implementation and instrumental variables.
+This Python Toolbox provides commands to design feedback controllers using the Optimal Control Identification method.
+The toolbox implements both SISO and MIMO controllers, combining system identification and the Virtual Reference Feedback Tuning method.
 
 ## Install
 
 Use PIP to install:
 
 ```bash
-pip install pyvrft
+pip install pyoci
 ```
 
 ## Use
@@ -20,12 +20,10 @@ pip install pyvrft
 Please check the *example* folder. Basic use:
 
 ```Python
-p = vrft.design(u, y, y, Td, C, L)
+C = oci.design(u, y, Td, Cf, method, model_params, L)
 ```
-where *u* and *y* are input/output data, *Td* is the reference mode, *C* describes the controller structure and *L* is a pre-filter.
+where *u* and *y* are input/output data, *Td* is the reference model, *Cf* describes the controller structure, *method* is the identification method, *model_params* are the identification parameters and *L* is a pre-filter.
 
 ## Contributors
 
-Diego Eckhard - diegoeck@ufrgs.br - @diegoeck
-
-Emerson Christ Boeira - emerson.boeira@ufrgs.br - @emersonboeira
+Lara Colognese de Almeida - lara.almeida@ufrgs.com - @lara-ca
