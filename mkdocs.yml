@@ -1,0 +1,36 @@
+site_name: pyoci
+site_description: Optimal Control Identification Toolbox
+site_author: Lara Colognese de Almeida
+repo_url: https://github.com/lara-ca/pyoci
+repo_name: lara-ca/pyoci
+
+site_url: https://pyoci.net/
+
+theme:
+  name: material
+  palette:
+    primary: teal
+    accent: teal
+  features:
+    - navigation.sections
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: installation.md
+      - Quick Start: quickstart.md
+      - Basic Concepts: basic-concepts.md
+  - Examples: examples.md
+  - API Reference: api.md
+  - Citation: citation.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - admonition
+  - toc:
+      permalink: true

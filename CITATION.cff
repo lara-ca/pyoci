@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use pyoci, please cite it using the metadata from this file."
+title: "pyoci: Optimal Control Identification"
+version: 0.1.0
+date-released: 2026-06-10
+authors:
+  - family-names: Almeida
+    given-names: Lara Colognese de
+    email: colognesealmeida.lara@gmail.com
+repository-code: "https://github.com/lara-ca/pyoci"
+url: "https://pyoci.net/"
+license: MIT
